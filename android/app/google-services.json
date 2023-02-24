@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1070602348115",
+    "project_id": "aeye-777ad",
+    "storage_bucket": "aeye-777ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070602348115:android:f5632fb9172427fa4748a6",
+        "android_client_info": {
+          "package_name": "com.example.fourth_grade_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070602348115-28kbgjgqa9i2regetabh3jr2tekt2k26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLzPyIdMi2nWcr9ZH1QVQH9H1Sl5sW8Rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070602348115-28kbgjgqa9i2regetabh3jr2tekt2k26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
