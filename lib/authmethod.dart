@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -38,12 +39,12 @@ class fireBaseAuth {
     try {
       await _auth.signInWithEmailAndPassword(
           email: email.text, password: password.text);
-
       if (user?.emailVerified == false) {
         await sendEmailVerification(context);
+        await FirebaseFirestore.instance.clearPersistence();
       }
-
       if (user?.emailVerified == true) {
+        await FirebaseFirestore.instance.clearPersistence();
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => const HomePage()));
       }

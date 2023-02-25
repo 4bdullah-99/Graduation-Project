@@ -15,6 +15,7 @@ class LogIn extends StatefulWidget {
 class _LogInState extends State<LogIn> {
   final TextEditingController _passwordTextController = TextEditingController();
   final TextEditingController _emailTextController = TextEditingController();
+  final user = FirebaseAuth.instance.currentUser!;
 
   void logInUser() {
     fireBaseAuth(FirebaseAuth.instance).emailLogin(
@@ -76,9 +77,13 @@ class _LogInState extends State<LogIn> {
                         context: context);
                   }),
                 ),
-                const Text(
-                  "current user ",
-                  style: TextStyle(color: Colors.amberAccent),
+                Text(
+                  _emailTextController.text + _passwordTextController.text,
+                  style: const TextStyle(color: Colors.amberAccent),
+                ),
+                Text(
+                  ("the curent user " + user.email!),
+                  style: const TextStyle(color: Colors.amberAccent),
                 ),
                 SignUp()
               ],

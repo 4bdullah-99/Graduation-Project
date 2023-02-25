@@ -13,7 +13,7 @@ class splash_screen extends StatelessWidget {
       splash: Lottie.asset('assets/animations/robot-says-hi.json'),
       backgroundColor: const Color.fromRGBO(0, 16, 33, 100),
       nextScreen: const OnBoarding(),
-      duration: 100,
+      duration: 1000,
       splashIconSize: 300,
       splashTransition: SplashTransition.slideTransition,
     );

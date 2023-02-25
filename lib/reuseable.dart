@@ -2,10 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'authmethod.dart';
 
-TextEditingController _UsernameController = TextEditingController();
-TextEditingController _PassWordController = TextEditingController();
-TextEditingController _EmailController = TextEditingController();
-
 TextField TF(
     String text, IconData icon, bool pass, TextEditingController controller) {
   return TextField(
